@@ -1,0 +1,68 @@
+//main:../style.less
+
+.about {
+	margin: 8.4rem 0;
+}
+
+.about_itm {
+	display: flex;
+	max-width: 73rem;
+}
+
+.about_photo {
+	position: relative;
+	img {
+		position: relative;
+		z-index: 2;
+	}
+}
+
+.about_photo {
+	&:before {
+
+		width: 27.5rem;
+		height: 27.5rem;
+		background-color: @grey;
+		content: "";
+		position: absolute;
+		left: 1rem;
+		bottom: 0;
+		z-index: 1;
+	}
+}
+
+.about_photo,
+.about_content {
+	width: 50%;
+}
+
+.about_content {
+	padding-left: 3.2rem;
+	margin-top: 2rem;
+}
+
+.about_sub {
+	font-size: 3rem;
+	color: @black;
+	font-weight: 700;
+	padding: 1rem;
+	text-transform: uppercase;
+}
+
+.about_title {
+	font-size: 6.13rem;
+	font-weight: 700;
+	line-height: 1.1;
+	color: fade(@black, 15%);
+	text-transform: uppercase;
+}
+
+.about_text {
+	margin-top: 1.5rem;
+	font-size: 0.8rem;
+	font-weight: 300;
+	line-height: 1.5;
+	color: @grey;
+	padding: 0 1rem;
+	margin-bottom: 2.5rem;
+}
