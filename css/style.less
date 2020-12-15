@@ -1,7 +1,5 @@
 //compress: true;
 
-@import "vars";
-
 html {
 	font-size: 15px;
 }
@@ -27,8 +25,11 @@ p {
 	box-sizing: border-box;
 }
 
-/* blocks */
+/*import*/
+@import "vars";
+@import "blocks/helper";
 
+/* blocks */
 @import "blocks/container";
 @import "blocks/header";
 @import "blocks/user";
@@ -39,8 +40,8 @@ p {
 @import "blocks/works";
 @import "blocks/portfolio";
 @import "blocks/work";
-@import "blocks/helper";
 @import "blocks/about";
 @import "blocks/reviews";
 @import "blocks/news";
 @import "blocks/blog";
+@import "blocks/footer";

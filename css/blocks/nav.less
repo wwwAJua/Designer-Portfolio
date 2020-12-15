@@ -6,7 +6,8 @@
 	align-items: center;
 }
 
-.nav_link {
+.nav_link,
+.footer_link {
 	position: relative;
 	margin-left: 2rem;
 	font-size: 0.93rem;
@@ -27,7 +28,7 @@
 		transition: width .2s linear;
 	}
 	
-	&:hover:not(.nav_link--btn) {
+	&:hover:not(.nav_link--btn, .footer_link--btn) {
 	 &:after {
 		 width: 100%;
 	 }
@@ -43,6 +44,14 @@
 			background-color: @black;
 			color: white;
 		}
+	}
+}
+
+.footer_link {
+	color: @grey-light;
+	border-color: @grey-light;
+	&:after {
+		background-color: @grey-light;
 	}
 }
 
