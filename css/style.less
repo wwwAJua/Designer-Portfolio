@@ -9,6 +9,9 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1rem;
 	color: @black;
+	&.no-scroll {  /*для модельных окон*/
+		overflow: hidden;
+	}
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -45,3 +48,4 @@ p {
 @import "blocks/news";
 @import "blocks/blog";
 @import "blocks/footer";
+@import "blocks/modal";

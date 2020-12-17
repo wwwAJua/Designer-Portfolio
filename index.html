@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300&display=swap"
 		rel="stylesheet">
@@ -14,7 +15,7 @@
 
 <body>
 	<!-- header -->
-	<header class="header">
+	<header class="header animated slideInDown">
 		<div class="container">
 			<div class="header__inner">
 
@@ -45,7 +46,7 @@
 		<div class="container">
 
 			<div class="intro_inner">
-				<div class="intro_content">
+				<div class="intro_content animated slideInLeft">
 					<H2 class="intro_subtitle">Hello, I’m</H2>
 					<H1 class="intro_title">User Name</H1>
 					<div class="intro_text">UI & UX Designer</div>
@@ -72,7 +73,7 @@
 					<a class="btn" href="#">hire me</a>
 					<button class="btn" href="#">see my resume</button>
 				</div>
-				<img class="intro_photo" src="img/photo.png" alt="photo">
+				<img class="intro_photo animated slideInRight" src="img/photo.png" alt="photo">
 			</div>
 
 		</div>
@@ -367,7 +368,7 @@
 			<div class="footer_inner">
 				<div class="footer_credits">
 					<div class="copyright">
-						© 2018 UI43 - Free Templates
+						© 2020 UI43 - Free Templates
 					</div>
 					<div class="footer_social">
 						<a href="#" target="blunk" title="skype"><img src="img/022-skype.svg" width="24" alt="skype">
@@ -396,6 +397,58 @@
 
 		</div>
 	</section>
+	<!-- Modals -->
+	<div class="modal">
+		<div class="modal_dialog">
+
+			<button class="modal_close">
+				<i class="far fa-times-circle"></i>
+			</button>
+
+			<div class="modal-work">
+
+				<div class="modal-work_prev">
+					<img class="modal-work_photo" src="https://placehold.it/790" alt="img">
+				</div>
+
+				<div class="modal-work_content">
+
+					<div class="modal-work_header">
+						<H3 class="modal-work_title">PROJECT TITLE</H3>
+						<div class="modal-work_info">
+							<div class="modal-work_cat">
+								CATEGORY <span class="modal-work_divider">|</span> 2021
+							</div>
+						</div>
+					</div>
+
+					<div class="modal-work_client">
+						<div class="modal-work_client-title">Client:</div>
+						<div class="modal-work_client-company">Creative Agency</div>
+					</div>
+
+					<div class="modal-work_text">
+						<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget
+							luctus.
+							Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante.</p>
+						<p> luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis
+							sem.
+							Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in
+							nulla egestas, dignissim elit at, imperdiet eros. Integer tristique posuere purus.</p>
+					</div>
+
+					<div class="model-work_footer">
+						<button type="button" class="work-scroll work-scroll--prev"><i
+								class="fas fa-chevron-left"></i>Previous</button>
+						<button type="button" class="work-scroll work-scroll--next">Next<i
+								class="fas fa-chevron-right"></i></button>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
 
 </body>
 
