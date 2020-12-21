@@ -35,7 +35,7 @@
 					<a class="nav_link" href="#">about me</a>
 					<a class="nav_link" href="#">blog</a>
 					<a class="nav_link" href="#">contacts</a>
-					<a class="nav_link nav_link--btn" href="#">hire me</a>
+					<a class="nav_link nav_link--btn" href="#" data-modal="#modal_hire_me">hire me</a>
 				</nav>
 
 			</div>
@@ -70,8 +70,8 @@
 							<i style="color: red;" class="fab fa-youtube"></i>
 						</a>
 					</div>
-					<a class="btn" href="#">hire me</a>
-					<button class="btn" href="#">see my resume</button>
+					<a class="btn" href="#" data-modal="#modal_hire_me">hire me</a>
+					<button class="btn" href="#" data-modal="#modal_resume">see my resume</button>
 				</div>
 				<img class="intro_photo" src="img/photo.png" alt="photo">
 			</div>
@@ -92,7 +92,7 @@
 			<div class="portfolio">
 				<div class="portfolio_col" data-cat="App">
 					<!-- work1 -->
-					<div class="work">
+					<div class="work" data-modal="#modal_project_1">
 						<img class="work_img" src="https://placehold.it/370x300" alt="#">
 						<div class="work_content">
 							<div class="work_cat">App</div>
@@ -105,7 +105,7 @@
 				</div>
 				<div class="portfolio_col" data-cat="App">
 					<!-- work2 -->
-					<div class="work">
+					<div class="work" data-modal="#modal_project_2">
 						<img class="work_img" src="https://placehold.it/370x300" alt="#">
 						<div class="work_content">
 							<div class="work_cat">App</div>
@@ -118,7 +118,7 @@
 				</div>
 				<div class="portfolio_col" data-cat="App">
 					<!-- work3 -->
-					<div class="work">
+					<div class="work" data-modal="#modal_project_3">
 						<img class="work_img" src="https://placehold.it/370x300" alt="#">
 						<div class="work_content">
 							<div class="work_cat">App</div>
@@ -131,7 +131,7 @@
 				</div>
 				<div class="portfolio_col" data-cat="Websites">
 					<!-- work4 -->
-					<div class="work">
+					<div class="work" data-modal="#modal_project_4">
 						<img class="work_img" src="https://placehold.it/370x300" alt="#">
 						<div class="work_content">
 							<div class="work_cat">Websites</div>
@@ -144,7 +144,7 @@
 				</div>
 				<div class="portfolio_col" data-cat="Websites">
 					<!-- work5 -->
-					<div class="work">
+					<div class="work" data-modal="#modal_project_5">
 						<img class="work_img" src="https://placehold.it/370x300" alt="#">
 						<div class="work_content">
 							<div class="work_cat">Websites</div>
@@ -157,7 +157,7 @@
 				</div>
 				<div class="portfolio_col" data-cat="Websites">
 					<!-- work6 -->
-					<div class="work">
+					<div class="work" data-modal="#modal_project_6">
 						<img class="work_img" src="https://placehold.it/370x300" alt="#">
 						<div class="work_content">
 							<div class="work_cat">Websites</div>
@@ -170,7 +170,7 @@
 				</div>
 				<div class="portfolio_col" data-cat="Interaction">
 					<!-- work7 -->
-					<div class="work">
+					<div class="work" data-modal="#modal_project_7">
 						<img class="work_img" src="https://placehold.it/370x300" alt="#">
 						<div class="work_content">
 							<div class="work_cat">Interaction</div>
@@ -183,7 +183,7 @@
 				</div>
 				<div class="portfolio_col" data-cat="Interaction">
 					<!-- work8 -->
-					<div class="work">
+					<div class="work" data-modal="#modal_project_8">
 						<img class="work_img" src="https://placehold.it/370x300" alt="#">
 						<div class="work_content">
 							<div class="work_cat">Interaction</div>
@@ -196,7 +196,7 @@
 				</div>
 				<div class="portfolio_col" data-cat="Interaction">
 					<!-- work9 -->
-					<div class="work">
+					<div class="work" data-modal="#modal_project_9">
 						<img class="work_img" src="https://placehold.it/370x300" alt="#">
 						<div class="work_content">
 							<div class="work_cat">Interaction</div>
@@ -239,8 +239,8 @@
 						laoreet nibh ex vitae dui. Aenean laoreet pellentesque lacus, eget varius massa mattis quis. Nunc
 						ultrices urna eu nunc lobortis pulvinar. Duis viverra, quam non imperdiet scelerisque, urna nunc
 						consequat velit, in mollis erat nibh in libero.</div>
-					<a class="btn" href="#">hire me</a>
-					<button class="btn" href="#">see my resume</button>
+					<a class="btn" href="#" data-modal="#modal_hire_me">hire me</a>
+					<button class="btn" href="#" data-modal="#modal_resume">see my resume</button>
 				</div>
 			</div>
 
@@ -371,7 +371,7 @@
 						© 2020 UI43 - Free Templates
 					</div>
 					<div class="footer_social">
-						<a href="#" target="blunk" title="skype"><img src="img/022-skype.svg" width="24" alt="skype">
+						<!-- <a href="#" target="blunk" title="skype"><img src="img/022-skype.svg" width="24" alt="skype">
 						</a>
 						<a href="#" target="blunk" title="myspace"><img src="img/030-myspace.svg" width="24" alt="myspace">
 						</a>
@@ -383,6 +383,24 @@
 						<a href="#" target="blunk" title="whatsapp"><img src="img/007-whatsapp.svg" width="24" alt="whatsapp">
 						</a>
 						<a href="#" target="blunk" title="youtube"><img src="img/002-youtube.svg" width="24" alt="youtube">
+						</a> -->
+						<a class="social_link" title="linkedin" href="#">
+							<i style="color: #007BB6;" class="fab fa-linkedin-in"></i>
+						</a>
+						<a style="color: #000;" class="social_link" title="github" href="#">
+							<i class="fab fa-github"></i>
+						</a>
+						<a class="social_link" title="instagram" href="#">
+							<i style="color: #ff00ef;" class="fab fa-instagram"></i>
+						</a>
+						<a class="social_link" title="facebook" href="#">
+							<i style="color: #3A5898;" class="fab fa-facebook-f"></i>
+						</a>
+						<a class="social_link" title="twitter" href="#">
+							<i style="color: #56ACEF;" class="fab fa-twitter"></i>
+						</a>
+						<a class="social_link" title="youtube" href="#">
+							<i style="color: red;" class="fab fa-youtube"></i>
 						</a>
 					</div>
 				</div>
@@ -391,17 +409,17 @@
 					<a class="footer_link" href="#">about me</a>
 					<a class="footer_link" href="#">blog</a>
 					<a class="footer_link" href="#">contacts</a>
-					<a class="footer_link footer_link--btn" href="#">hire me</a>
+					<a class="footer_link footer_link--btn" href="#" data-modal="#modal_hire_me">hire me</a>
 				</nav>
 			</div>
 
 		</div>
 	</section>
-	<!-- Modals -->
-	<div class="modal" style="display: none;">
+	<!-- modal_project_1-9 -->
+	<div class="modal" id="modal_project_1">
 		<div class="modal_dialog">
 
-			<button class="modal_close">
+			<button class="modal_close" data-close>
 				<i class="far fa-times-circle"></i>
 			</button>
 
@@ -449,17 +467,425 @@
 			</div>
 		</div>
 	</div>
-	<!-- Modal2 -->
-	<div class="modal" style="display: none;">
+	<div class="modal" id="modal_project_2">
 		<div class="modal_dialog">
 
-			<button class="modal_close">
+			<button class="modal_close" data-close>
+				<i class="far fa-times-circle"></i>
+			</button>
+
+			<div class="modal-work">
+
+				<div class="modal-work_prev">
+					<img class="modal-work_photo" src="https://placehold.it/790" alt="img">
+				</div>
+
+				<div class="modal-work_content">
+
+					<div class="modal-work_header">
+						<H3 class="modal-work_title">PROJECT TITLE</H3>
+						<div class="modal-work_info">
+							<div class="modal-work_cat">
+								CATEGORY <span class="modal-work_divider">|</span> 2021
+							</div>
+						</div>
+					</div>
+
+					<div class="modal-work_client">
+						<div class="modal-work_client-title">Client:</div>
+						<div class="modal-work_client-company">Creative Agency</div>
+					</div>
+
+					<div class="modal-work_text">
+						<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget
+							luctus.
+							Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante.</p>
+						<p> luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis
+							sem.
+							Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in
+							nulla egestas, dignissim elit at, imperdiet eros. Integer tristique posuere purus.</p>
+					</div>
+
+					<div class="model_work_footer">
+						<button type="button" class="work_scroll work_scroll--prev"><i
+								class="fas fa-chevron-left"></i>Previous</button>
+						<button type="button" class="work_scroll work_scroll--next">Next<i
+								class="fas fa-chevron-right"></i></button>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal_project_3">
+		<div class="modal_dialog">
+
+			<button class="modal_close" data-close>
+				<i class="far fa-times-circle"></i>
+			</button>
+
+			<div class="modal-work">
+
+				<div class="modal-work_prev">
+					<img class="modal-work_photo" src="https://placehold.it/790" alt="img">
+				</div>
+
+				<div class="modal-work_content">
+
+					<div class="modal-work_header">
+						<H3 class="modal-work_title">PROJECT TITLE</H3>
+						<div class="modal-work_info">
+							<div class="modal-work_cat">
+								CATEGORY <span class="modal-work_divider">|</span> 2021
+							</div>
+						</div>
+					</div>
+
+					<div class="modal-work_client">
+						<div class="modal-work_client-title">Client:</div>
+						<div class="modal-work_client-company">Creative Agency</div>
+					</div>
+
+					<div class="modal-work_text">
+						<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget
+							luctus.
+							Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante.</p>
+						<p> luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis
+							sem.
+							Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in
+							nulla egestas, dignissim elit at, imperdiet eros. Integer tristique posuere purus.</p>
+					</div>
+
+					<div class="model_work_footer">
+						<button type="button" class="work_scroll work_scroll--prev"><i
+								class="fas fa-chevron-left"></i>Previous</button>
+						<button type="button" class="work_scroll work_scroll--next">Next<i
+								class="fas fa-chevron-right"></i></button>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal_project_4">
+		<div class="modal_dialog">
+
+			<button class="modal_close" data-close>
+				<i class="far fa-times-circle"></i>
+			</button>
+
+			<div class="modal-work">
+
+				<div class="modal-work_prev">
+					<img class="modal-work_photo" src="https://placehold.it/790" alt="img">
+				</div>
+
+				<div class="modal-work_content">
+
+					<div class="modal-work_header">
+						<H3 class="modal-work_title">PROJECT TITLE</H3>
+						<div class="modal-work_info">
+							<div class="modal-work_cat">
+								CATEGORY <span class="modal-work_divider">|</span> 2021
+							</div>
+						</div>
+					</div>
+
+					<div class="modal-work_client">
+						<div class="modal-work_client-title">Client:</div>
+						<div class="modal-work_client-company">Creative Agency</div>
+					</div>
+
+					<div class="modal-work_text">
+						<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget
+							luctus.
+							Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante.</p>
+						<p> luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis
+							sem.
+							Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in
+							nulla egestas, dignissim elit at, imperdiet eros. Integer tristique posuere purus.</p>
+					</div>
+
+					<div class="model_work_footer">
+						<button type="button" class="work_scroll work_scroll--prev"><i
+								class="fas fa-chevron-left"></i>Previous</button>
+						<button type="button" class="work_scroll work_scroll--next">Next<i
+								class="fas fa-chevron-right"></i></button>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal_project_5">
+		<div class="modal_dialog">
+
+			<button class="modal_close" data-close>
+				<i class="far fa-times-circle"></i>
+			</button>
+
+			<div class="modal-work">
+
+				<div class="modal-work_prev">
+					<img class="modal-work_photo" src="https://placehold.it/790" alt="img">
+				</div>
+
+				<div class="modal-work_content">
+
+					<div class="modal-work_header">
+						<H3 class="modal-work_title">PROJECT TITLE</H3>
+						<div class="modal-work_info">
+							<div class="modal-work_cat">
+								CATEGORY <span class="modal-work_divider">|</span> 2021
+							</div>
+						</div>
+					</div>
+
+					<div class="modal-work_client">
+						<div class="modal-work_client-title">Client:</div>
+						<div class="modal-work_client-company">Creative Agency</div>
+					</div>
+
+					<div class="modal-work_text">
+						<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget
+							luctus.
+							Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante.</p>
+						<p> luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis
+							sem.
+							Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in
+							nulla egestas, dignissim elit at, imperdiet eros. Integer tristique posuere purus.</p>
+					</div>
+
+					<div class="model_work_footer">
+						<button type="button" class="work_scroll work_scroll--prev"><i
+								class="fas fa-chevron-left"></i>Previous</button>
+						<button type="button" class="work_scroll work_scroll--next">Next<i
+								class="fas fa-chevron-right"></i></button>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal_project_6">
+		<div class="modal_dialog">
+
+			<button class="modal_close" data-close>
+				<i class="far fa-times-circle"></i>
+			</button>
+
+			<div class="modal-work">
+
+				<div class="modal-work_prev">
+					<img class="modal-work_photo" src="https://placehold.it/790" alt="img">
+				</div>
+
+				<div class="modal-work_content">
+
+					<div class="modal-work_header">
+						<H3 class="modal-work_title">PROJECT TITLE</H3>
+						<div class="modal-work_info">
+							<div class="modal-work_cat">
+								CATEGORY <span class="modal-work_divider">|</span> 2021
+							</div>
+						</div>
+					</div>
+
+					<div class="modal-work_client">
+						<div class="modal-work_client-title">Client:</div>
+						<div class="modal-work_client-company">Creative Agency</div>
+					</div>
+
+					<div class="modal-work_text">
+						<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget
+							luctus.
+							Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante.</p>
+						<p> luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis
+							sem.
+							Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in
+							nulla egestas, dignissim elit at, imperdiet eros. Integer tristique posuere purus.</p>
+					</div>
+
+					<div class="model_work_footer">
+						<button type="button" class="work_scroll work_scroll--prev"><i
+								class="fas fa-chevron-left"></i>Previous</button>
+						<button type="button" class="work_scroll work_scroll--next">Next<i
+								class="fas fa-chevron-right"></i></button>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal_project_7">
+		<div class="modal_dialog">
+
+			<button class="modal_close" data-close>
+				<i class="far fa-times-circle"></i>
+			</button>
+
+			<div class="modal-work">
+
+				<div class="modal-work_prev">
+					<img class="modal-work_photo" src="https://placehold.it/790" alt="img">
+				</div>
+
+				<div class="modal-work_content">
+
+					<div class="modal-work_header">
+						<H3 class="modal-work_title">PROJECT TITLE</H3>
+						<div class="modal-work_info">
+							<div class="modal-work_cat">
+								CATEGORY <span class="modal-work_divider">|</span> 2021
+							</div>
+						</div>
+					</div>
+
+					<div class="modal-work_client">
+						<div class="modal-work_client-title">Client:</div>
+						<div class="modal-work_client-company">Creative Agency</div>
+					</div>
+
+					<div class="modal-work_text">
+						<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget
+							luctus.
+							Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante.</p>
+						<p> luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis
+							sem.
+							Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in
+							nulla egestas, dignissim elit at, imperdiet eros. Integer tristique posuere purus.</p>
+					</div>
+
+					<div class="model_work_footer">
+						<button type="button" class="work_scroll work_scroll--prev"><i
+								class="fas fa-chevron-left"></i>Previous</button>
+						<button type="button" class="work_scroll work_scroll--next">Next<i
+								class="fas fa-chevron-right"></i></button>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal_project_8">
+		<div class="modal_dialog">
+
+			<button class="modal_close" data-close>
+				<i class="far fa-times-circle"></i>
+			</button>
+
+			<div class="modal-work">
+
+				<div class="modal-work_prev">
+					<img class="modal-work_photo" src="https://placehold.it/790" alt="img">
+				</div>
+
+				<div class="modal-work_content">
+
+					<div class="modal-work_header">
+						<H3 class="modal-work_title">PROJECT TITLE</H3>
+						<div class="modal-work_info">
+							<div class="modal-work_cat">
+								CATEGORY <span class="modal-work_divider">|</span> 2021
+							</div>
+						</div>
+					</div>
+
+					<div class="modal-work_client">
+						<div class="modal-work_client-title">Client:</div>
+						<div class="modal-work_client-company">Creative Agency</div>
+					</div>
+
+					<div class="modal-work_text">
+						<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget
+							luctus.
+							Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante.</p>
+						<p> luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis
+							sem.
+							Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in
+							nulla egestas, dignissim elit at, imperdiet eros. Integer tristique posuere purus.</p>
+					</div>
+
+					<div class="model_work_footer">
+						<button type="button" class="work_scroll work_scroll--prev"><i
+								class="fas fa-chevron-left"></i>Previous</button>
+						<button type="button" class="work_scroll work_scroll--next">Next<i
+								class="fas fa-chevron-right"></i></button>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal_project_9">
+		<div class="modal_dialog">
+
+			<button class="modal_close" data-close>
+				<i class="far fa-times-circle"></i>
+			</button>
+
+			<div class="modal-work">
+
+				<div class="modal-work_prev">
+					<img class="modal-work_photo" src="https://placehold.it/790" alt="img">
+				</div>
+
+				<div class="modal-work_content">
+
+					<div class="modal-work_header">
+						<H3 class="modal-work_title">PROJECT TITLE</H3>
+						<div class="modal-work_info">
+							<div class="modal-work_cat">
+								CATEGORY <span class="modal-work_divider">|</span> 2021
+							</div>
+						</div>
+					</div>
+
+					<div class="modal-work_client">
+						<div class="modal-work_client-title">Client:</div>
+						<div class="modal-work_client-company">Creative Agency</div>
+					</div>
+
+					<div class="modal-work_text">
+						<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget
+							luctus.
+							Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante.</p>
+						<p> luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis
+							sem.
+							Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in
+							nulla egestas, dignissim elit at, imperdiet eros. Integer tristique posuere purus.</p>
+					</div>
+
+					<div class="model_work_footer">
+						<button type="button" class="work_scroll work_scroll--prev"><i
+								class="fas fa-chevron-left"></i>Previous</button>
+						<button type="button" class="work_scroll work_scroll--next">Next<i
+								class="fas fa-chevron-right"></i></button>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- modal_resume -->
+	<div class="modal" id="modal_resume">
+		<div class="modal_dialog">
+
+			<button class="modal_close" data-close>
 				<i class="far fa-times-circle"></i>
 			</button>
 
 			<div class="modal_content">
 
-				<H3 class="model_title text_right">resume</H3>
+				<H3 class="model_title text_centr">resume</H3>
 
 				<div class="text_centr">
 					<a href="#" class="btn btn--thin">download pdf</a>
@@ -592,18 +1018,18 @@
 				</div>
 
 				<div class="text_centr">
-					<a class="btn" href="#">hire me</a>
+					<a class="btn" href="#" data-modal="#modal_hire_me">hire me</a>
 				</div>
 
 			</div>
 
 		</div>
 	</div>
-	<!-- Modals3 -->
-	<div class="modal" style="display: none;">
+	<!-- modal_hire_me -->
+	<div class="modal" id="modal_hire_me">
 		<div class="modal_dialog modal_dialog--sm">
 
-			<button class="modal_close">
+			<button class="modal_close" data-close>
 				<i class="far fa-times-circle"></i>
 			</button>
 
