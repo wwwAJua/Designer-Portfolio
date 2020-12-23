@@ -1,6 +1,12 @@
+
+
 $(function () {
+
+	const worksSlider = $('[data-slider="slick"]');
+
 	/*Filter
 	---------------------------*/
+
 	let filter = $("[data-filter]");
 
 	filter.on("click", function (event) {
@@ -24,7 +30,8 @@ $(function () {
 	});
 
 	/*Modals
-	---------------------------*/
+	----------------------------------*/
+
 	const modalCall = $('[data-modal]');
 	const modalClose = $('[data-close]');
 
@@ -42,6 +49,9 @@ $(function () {
 				transform: 'rotateX(0)'/*'scale(1)'*/
 			});
 		}, 200);
+
+		worksSlider.slick('setPosition');
+
 	});
 
 	modalClose.on('click', function (event) {
@@ -76,4 +86,32 @@ $(function () {
 	$('.modal_dialog').on('click', function (event) {
 		event.stopPropagation();
 	});
+
+	/*Slider https://kenwheeler.github.io/slick/
+	------------------------------------------*/
+
+	worksSlider.slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		fade: true,
+		arrows: false,
+		dots: true
+	});
+
+	$('.prev').on('click', function (event) {
+		event.preventDefault();
+
+		let currentSlider = $(this).parents('.modal').find('[data-slider="slick"]');
+
+		currentSlider.slick('prev');
+	});
+	$('.next').on('click', function (event) {
+		event.preventDefault();
+
+		let currentSlider = $(this).parents('.modal').find('[data-slider="slick"]');
+
+		currentSlider.slick('next');
+	});
+
 });
