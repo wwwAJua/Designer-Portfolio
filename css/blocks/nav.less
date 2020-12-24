@@ -2,8 +2,26 @@
 
 .nav {
 	display: flex;
+	flex-wrap: wrap;
 	height: 100%;
 	align-items: center;
+
+	@media @mobile {
+		width: 100%;
+		height: auto;
+		padding: 1rem;
+		display: none;
+		position: absolute;
+		top: 100%;
+		right: 0;
+		z-index: 1000;
+		background-color: #fff;
+		box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+		text-align: center;
+		&.show {
+			display: flex;
+		}
+	}
 }
 
 .nav_link,
@@ -15,6 +33,9 @@
 	text-transform: uppercase;
 	font-weight: 700;
 	text-decoration: none;
+	&:first-child {
+		margin: 0;
+	}
 
 	&:after {
 		content:"";
@@ -44,6 +65,16 @@
 			background-color: @black;
 			color: white;
 		}
+	}
+
+	@media @mobile {
+		width: 100%;
+		margin-left: 0;
+		padding: .5rem 1rem;
+	}
+	@media @mobile-sm {
+		margin-left: 1rem;
+		padding: .5rem .1rem;
 	}
 }
 

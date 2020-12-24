@@ -2,8 +2,6 @@
 
 $(function () {
 
-	const worksSlider = $('[data-slider="slick"]');
-
 	/*Filter
 	---------------------------*/
 
@@ -34,6 +32,7 @@ $(function () {
 
 	const modalCall = $('[data-modal]');
 	const modalClose = $('[data-close]');
+	const worksSlider = $('[data-slider="slick"]');
 
 	modalCall.on('click', function (event) {
 		event.preventDefault();
@@ -112,6 +111,19 @@ $(function () {
 		let currentSlider = $(this).parents('.modal').find('[data-slider="slick"]');
 
 		currentSlider.slick('next');
+	});
+
+	/*MobileNav
+	----------------------------------------------------*/
+
+	const navToggle = $('#navToggle');
+	const nav = $('#nav');
+
+	navToggle.on('click', function (event) {
+		event.preventDefault();
+
+		nav.toggleClass('show');
+
 	});
 
 });

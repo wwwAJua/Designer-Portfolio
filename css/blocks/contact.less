@@ -3,11 +3,22 @@
 .contact {
 	display: flex;
 	background: url(../img/photo.png)right center no-repeat;
+	@media @tablet {
+		background-size: 375px;
+	}
+	@media @mobile {
+		background-size: 0;
+	}
 }
 
 .contact_left {
 	width: 47%;
 	padding: 2rem;
+
+	@media @mobile {
+		background-size: 0;
+		width: 90%;
+	}
 }
 
 .contact_info {
@@ -17,6 +28,10 @@
 	font-size: 0.94rem;
 	color: @black;
 	font-weight: 300;
+
+	@media @mobile {
+		margin: 2rem 0 2rem;
+	}
 }
 
 .contact_info-itm {

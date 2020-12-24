@@ -49,6 +49,10 @@
 
 .modal_content {
 	padding: 5rem 1rem;
+	
+	@media @tablet {
+		padding: 2rem 1rem;
+	}
 }
 
 .model_title {
@@ -59,6 +63,13 @@
 	color: @black;
 	&--mb-0 {
 		margin-bottom: 0;
+	}
+
+	@media @tablet {
+		margin-bottom: 2rem;
+	}
+	@media @mobile {
+		font-size: 2rem;
 	}
 }
 

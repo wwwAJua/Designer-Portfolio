@@ -4,9 +4,21 @@
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0 -1rem 2.8rem;
+	@media @mobile-sm {
+		justify-content: center;
+	}
 }
 
 .portfolio_col {
 	flex-basis: 33%;
 	padding: 1rem;
+
+	@media @mobile {
+		flex-basis: 50%;
+	}
+	@media @mobile-sm {
+		flex-basis: 100%;
+		max-width: 370px;
+		justify-content: center;
+	}
 }

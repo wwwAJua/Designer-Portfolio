@@ -10,7 +10,7 @@
 	text-decoration: none;
 	background: none;
 	border: 1px solid @grey;
-	border-radius: 1.8em;
+	border-radius:2.8em;
 	line-height: 1.1;
 	padding: 1.05em 1.7em;
 	color: @black;
@@ -43,7 +43,16 @@
 	}
 
 	&--thin {
-		min-width: 145px;
 		font-size: .8rem;
+	}
+
+	@media @tablet {
+		max-width: 70%;
+		font-size: 1rem;
+		padding: 1em 1em;
+		line-height: 1;
+		margin: 1rem 1rem;
+	}
+	@media @mobile {
 	}
 }

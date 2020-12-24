@@ -17,6 +17,16 @@
 		left: 50%;
 		z-index: 1;
 	}
+
+	@media @tablet {
+		margin: 2rem auto;
+	}
+	@media @mobile {
+		flex-direction: column;
+		&:before {
+			display: none;
+		}
+	}
 }
 
 .timeline_col {
@@ -27,6 +37,12 @@
 	}
 	&--right {
 		padding-left: 3.2rem;
+	}
+
+	@media @mobile {
+		width: 100%;
+		padding: 0;
+		text-align: center;
 	}
 }
 

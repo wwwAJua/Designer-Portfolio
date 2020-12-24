@@ -2,11 +2,19 @@
 
 .about {
 	margin: 8.4rem 0;
+	@media @tablet {
+		margin: 2.5rem 0;
+	}
 }
 
 .about_itm {
 	display: flex;
 	max-width: 73rem;
+
+	@media @tablet {
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 .about_photo {
@@ -14,6 +22,7 @@
 	img {
 		position: relative;
 		z-index: 2;
+		left: 0;
 	}
 }
 
@@ -26,16 +35,28 @@
 	left: 1rem;
 	bottom: 0;
 	z-index: 1;
+
+	@media @tablet {
+		width: 80%;
+		height: 70%;
+	}
 }
 
 .about_photo,
 .about_content {
 	width: 50%;
+	@media @tablet {
+		width: 70%;
+	}
 }
 
 .about_content {
 	padding-left: 3.2rem;
 	margin-top: 2rem;
+
+	@media @tablet {
+		padding: 0;
+	}
 }
 
 .about_sub {
@@ -44,6 +65,10 @@
 	font-weight: 700;
 	padding: 1rem;
 	text-transform: uppercase;
+
+	@media @mobile {
+		font-size: 2rem;
+	}
 }
 
 .about_title {
@@ -52,6 +77,10 @@
 	line-height: 1.1;
 	color: fade(@black, 15%);
 	text-transform: uppercase;
+
+	@media @mobile {
+		font-size: 3rem;
+	}
 }
 
 .about_text {
@@ -62,4 +91,8 @@
 	color: @grey;
 	padding: 0 1rem;
 	margin-bottom: 2.5rem;
+
+	@media @mobile {
+		padding: 0;
+	}
 }
